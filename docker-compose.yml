@@ -1,0 +1,7 @@
+services:
+  image-minifier:
+    build: .
+    volumes:
+      - ./images/input:/app/images/input
+      - ./images/output:/app/images/output
+    command: python minify_images.py
